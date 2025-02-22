@@ -1,0 +1,16 @@
+#foto1 {
+    width: 400px; 
+    height: 300px; 
+    border: 4px solid black; 
+    object-fit: cover; 
+  }
+
+#foto1:hover {
+    background-color: antiquewhite;
+}
+
+#foto1:hover {
+    filter: brightness(1.3); 
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8); 
+    transform: scale(0.9); 
+  }
