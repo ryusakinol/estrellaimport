@@ -10,10 +10,21 @@ body{
 
 }
 
-img{
-    width: 100%;
+.header {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+}
+
+h2 {
+  margin: 0; /
+
+
+img {
+    width: 50%;
     height: 50%;
     object-fit: cover;
+    display: flex;
 }
 
 img:first-child{
@@ -41,24 +52,31 @@ img:nth-child(15){
     
 }
 
-/* Asegura que el texto y elementos no estén centrados */
+p {
+  text-align: justify;
+}
+img {
+  float: left;
+  margin: 0 15px 10px 0;
+  width: 600px;
+}
+
 body {
   text-align: left !important;
 }
 
-/* Corrige la alineación de los contenedores principales */
+
 .container, .row, .col-12 {
   text-align: left !important;
 }
 
-/* Asegura que las imágenes no estén centradas */
-.img-container {
-  display: flex; /* Poner las imágenes en línea */
-  justify-content: flex-start; /* Alinearlas a la izquierda */
-  gap: 10px; /* Espacio entre imágenes */
-}
 
-/* Imágenes con tamaño uniforme y efectos */
+.img-container {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 10px; 
+
+
 .img-custom {
   width: 300px;
   height: 200px;
@@ -68,7 +86,7 @@ body {
   display: block;
 }
 
-/* Efecto de iluminación al pasar el mouse */
+
 .img-custom:hover {
   filter: brightness(1.2);
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
@@ -76,6 +94,7 @@ body {
 }
 
 /* Contact us */
+
 #fotoconta {
 width: 420px;
 height: 600px ;
@@ -91,6 +110,7 @@ font-size: 20px
 
 .fotolorem {
   margin: 10px;
+
 }
 
 /* about us */
@@ -105,28 +125,31 @@ font-size: 20px
 .contenedor {
   display: flex;
   align-items: center; /* Alinea verticalmente */
-  gap: 10px; /* Espacio entre la imagen y el texto */
-}
+  gap: 10px; 
 
 .contenedor img {
-  width: 150px; /* Ajusta el tamaño de la imagen */
+  width: 150px; 
   height: auto;
 }
 
 .testi {
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
 }
 
 .testi {
   display: flex;
-  align-items: center; /* Alinea verticalmente */
-  gap: 10px; /* Espacio entre la imagen y el texto */
+  align-items: center; 
+  gap: 10px; 
 }
 
-.testi {
-  display: flex;
-  align-items: center; /* Alinea verticalmente */
-  gap: 10px; /* Espacio entre la imagen y el texto */
+p {
+  text-align: justify;
+}
+
+img {
+ float: left;  
+ margin: 0 15px 10px 0; 
+ width: 200px; 
 }

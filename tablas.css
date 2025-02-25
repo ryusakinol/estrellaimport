@@ -1,10 +1,12 @@
-body{
+body {
     font-family: 'lato', sans-serif;
 }
-h2{
+
+h2 {
     font-weight: 400;
 }
-p{
+
+p {
     font-weight: 300;
 }
 .container {
@@ -16,11 +18,11 @@ p{
     flex-wrap: wrap;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.columna{
+.columna {
     background: rgb (238, 238, 238);
     color: #333;
     border: 1px solid #333;
@@ -33,12 +35,12 @@ p{
 
 }
 
-.precio{
+.precio {
     font-size: 50px;
     color: #00dac7;
 }
 
-.btn-precio{
+.btn-precio {
     background: salmon;
     display: block;
     padding: 10px;
@@ -47,18 +49,19 @@ p{
     border-radius: 3px;
     margin-bottom: 10px;
 }
-.btn-precio:hover{
+
+.btn-precio:hover {
     background: rgb(250, 93, 75);
 } 
 
-@media (max-width: 1070px){
+@media (max-width: 1070px) {
     .columna{
         width: 45%;
         margin-bottom: 20px;
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
     .columna{
         width: 100%;
         margin-bottom: 20px;
