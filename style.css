@@ -1,81 +1,77 @@
-body{
-    background: radial-gradient(circle,#fff,#bbb);
-    padding: 15px;
-} 
-
-.grid-container{
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
-    grid-auto-rows: 100px;
-    grid-gap: 10px;
-
+body {
+  background: radial-gradient(circle, #fff, #bbb);
+  padding: 15px;
+  text-align: left !important;
 }
 
-.header {
+.header-container {
   display: flex;
-  align-items: center; 
-  gap: 10px; 
+  align-items: center;
+  gap: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 100px;
+  gap: 10px;
 }
 
 h2 {
-  margin: 0; /
-
+  margin: 0;
+}
 
 img {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-    display: flex;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  display: block;
 }
 
-img:first-child{
-    grid-column: 1/3;
-    grid-row: 1/3;
+/* Estilos específicos para imágenes dentro del grid */
+img:first-child {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
 }
 
-img:nth-child(9){
-    grid-column: 2/4;
-    grid-row: 3/5;
+img:nth-child(9) {
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
 }
 
-img:nth-child(13){
-    grid-row: span 2;
-    
+img:nth-child(13),
+img:nth-child(14) {
+  grid-row: span 2;
 }
 
-img:nth-child(14){
-    grid-row: span 2;
-    
+img:nth-child(15) {
+  grid-column: span 2;
 }
 
-img:nth-child(15){
-    grid-column: span 2;
-    
-}
-
+/* Ajustes para imágenes en texto */
 p {
   text-align: justify;
 }
+
 img {
   float: left;
   margin: 0 15px 10px 0;
   width: 600px;
 }
 
-body {
+.container,
+.row,
+.col-12 {
   text-align: left !important;
+  margin: 15px;
 }
 
-
-.container, .row, .col-12 {
-  text-align: left !important;
-}
-
-
+/* Contenedor de imágenes */
 .img-container {
   display: flex;
-  justify-content: flex-start; 
-  gap: 10px; 
-
+  justify-content: flex-start;
+  gap: 10px;
+}
 
 .img-custom {
   width: 300px;
@@ -86,7 +82,6 @@ body {
   display: block;
 }
 
-
 .img-custom:hover {
   filter: brightness(1.2);
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
@@ -94,62 +89,45 @@ body {
 }
 
 /* Contact us */
-
 #fotoconta {
-width: 420px;
-height: 600px ;
-font-size: 20px
+  width: 420px;
+  height: 600px;
+  font-size: 20px;
 }
 
 #fotolorem {
   width: 500px;
   height: auto;
   margin: 10px;
-  font-size: 20px
+  font-size: 20px;
 }
 
 .fotolorem {
   margin: 10px;
-
 }
 
-/* about us */
-
+/* About us */
 .contenedor {
   display: flex;
-  align-items: center; /* Alinea verticalmente */
-  gap: 10px; /* Espacio entre la imagen y el texto */
+  align-items: center;
+  gap: 10px;
 }
-
-
-.contenedor {
-  display: flex;
-  align-items: center; /* Alinea verticalmente */
-  gap: 10px; 
 
 .contenedor img {
-  width: 150px; 
+  width: 150px;
   height: auto;
 }
 
+/* Testimonios */
 .testi {
   display: flex;
-  align-items: center; 
-  gap: 10px; 
+  align-items: center;
+  gap: 10px;
 }
 
-.testi {
-  display: flex;
-  align-items: center; 
-  gap: 10px; 
-}
-
-p {
-  text-align: justify;
-}
-
+/* Ajuste final para imágenes en general */
 img {
- float: left;  
- margin: 0 15px 10px 0; 
- width: 200px; 
+  float: left;
+  margin: 0 15px 10px 0;
+  width: 200px;
 }
