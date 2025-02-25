@@ -8,12 +8,8 @@ h2 {
     font-weight: 400;
 }
 
-p {
-    font-weight: 300;
-}
-
 .container {
-    width: 80%;
+    width: 92%;
     margin: 0 auto;
 }
 
@@ -63,7 +59,7 @@ p {
 
 @media (max-width: 1070px) {
     .columna {
-        width: 45%;
+        width: 50%;
     }
 }
 
